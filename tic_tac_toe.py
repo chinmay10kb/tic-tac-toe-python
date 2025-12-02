@@ -1,3 +1,4 @@
+print('TIC TAC TOE GAME')
 l1=[' ',' ',' ']
 l2=[' ',' ',' ']
 l3=[' ',' ',' ']
@@ -8,8 +9,9 @@ while True:
  p1=input('player 1,enter x or o:')
  if p1  in ('x','o','X','O'):
     break
+ print('choose x or o only')
     
-if p1=='x':
+if p1 in ('x','X'):
     p2='o'
 else:
     p2='x'
@@ -115,3 +117,4 @@ elif (l1[0]==p2 and l1[1]==p2 and l1[2]==p2) or (l2[0]==p2 and l2[1]==p2 and l2[
     print('player 2 wins')
 else:
     print('draw')
+input("Press 0 to exit...")
